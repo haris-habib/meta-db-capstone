@@ -73,3 +73,14 @@ END //
 
 DELIMITER ;
 
+DELIMITER //
+
+CREATE PROCEDURE maxquantity()
+BEGIN
+    SELECT MAX(quantity) , item_id FROM Orders;
+END //
+
+DELIMITER ;
+
+
+
